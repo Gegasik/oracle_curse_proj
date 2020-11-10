@@ -85,8 +85,6 @@ end;
 
 /
 
-
-
 ALTER TABLE "session" ADD CONSTRAINT "session_fk0" FOREIGN KEY ("film_id") REFERENCES "film"("id");
 ALTER TABLE "session" ADD CONSTRAINT "session_fk1" FOREIGN KEY ("cinema_hall_id") REFERENCES "cinema_hall"("id");
 
