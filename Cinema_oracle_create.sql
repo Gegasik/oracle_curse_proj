@@ -1,95 +1,77 @@
-CREATE TABLE "cinema_hall" (
-	"id" INT NOT NULL,
-	"title" CHAR(255) UNIQUE NOT NULL DEFAULT "255",
-	"capacity" INT NOT NULL,
-	constraint CINEMA_HALL_PK PRIMARY KEY ("id"));
+CREATE TABLE CINEMA_HALL(
+	id INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+	title CHAR(255) UNIQUE NOT NULL,
+	capacity INT NOT NULL,
+	constraint CINEMA_HALL_PK PRIMARY KEY (id));
 
-CREATE sequence "CINEMA_HALL_ID_SEQ";
+--**************************************************************************************************
+CREATE TABLE CATEGORY (
+	id INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+	title CHAR(255) UNIQUE NOT NULL,
+	constraint CATEGORY_PK PRIMARY KEY (id));
 
-CREATE trigger "BI_CINEMA_HALL_ID"
-  before insert on "cinema_hall"
-  for each row
-begin
-  select "CINEMA_HALL_ID_SEQ".nextval into :NEW."id" from dual;
-end;
-
+--**************************************************************************************************
 /
-CREATE TABLE "category" (
-	"id" INT NOT NULL,
-	"title" CHAR(255) UNIQUE NOT NULL,
-	constraint CATEGORY_PK PRIMARY KEY ("id"));
+CREATE TABLE FILM (
+	id INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+	name CHAR(255) NOT NULL,
+	description CHAR(255) NOT NULL,
+	constraint FILM_PK PRIMARY KEY (id));
 
-CREATE sequence "CATEGORY_ID_SEQ";
-
-CREATE trigger "BI_CATEGORY_ID"
-  before insert on "category"
-  for each row
-begin
-  select "CATEGORY_ID_SEQ".nextval into :NEW."id" from dual;
-end;
-
+--**************************************************************************************************
 /
-CREATE TABLE "film" (
-	"id" INT NOT NULL,
-	"name" CHAR(255) NOT NULL,
-	"description" CHAR(255) NOT NULL,
-	constraint FILM_PK PRIMARY KEY ("id"));
+CREATE TABLE "SESSION" (
+	id INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+	film_id INT NOT NULL,
+	cinema_hall_id INT NOT NULL,
+	added_coast INT DEFAULT 0 NOT NULL ,
+	"date" DATE NOT NULL,
+	constraint SESSION_PK PRIMARY KEY (id));
 
-CREATE sequence "FILM_ID_SEQ";
-
-CREATE trigger "BI_FILM_ID"
-  before insert on "film"
-  for each row
-begin
-  select "FILM_ID_SEQ".nextval into :NEW."id" from dual;
-end;
-
+--**************************************************************************************************
 /
-CREATE TABLE "session" (
-	"id" INT NOT NULL,
-	"film_id" INT NOT NULL,
-	"cinema_hall_id" INT NOT NULL,
-	"added_coast" INT NOT NULL DEFAULT "0",
-	constraint SESSION_PK PRIMARY KEY ("id"));
+CREATE TABLE FILMS_CATEGORIES(
+	film_id INT NOT NULL,
+	category_id INT NOT NULL);
 
-CREATE sequence "SESSION_ID_SEQ";
-
-CREATE trigger "BI_SESSION_ID"
-  before insert on "session"
-  for each row
-begin
-  select "SESSION_ID_SEQ".nextval into :NEW."id" from dual;
-end;
-
+--**************************************************************************************************
 /
-CREATE TABLE "films_categories" (
-	"film_id" INT NOT NULL,
-	"category_id" INT NOT NULL);
-
-
+CREATE TABLE PLACE(
+	id INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+	cinema_hall_id INT NOT NULL,
+	coast INT NOT NULL,
+	constraint PLACE_PK PRIMARY KEY (id));
 /
-CREATE TABLE "place" (
-	"id" INT NOT NULL,
-	"cinema_hall_id" INT NOT NULL,
-	"coast" INT NOT NULL,
-	constraint PLACE_PK PRIMARY KEY ("id"));
+--**************************************************************************************************
+CREATE TABLE TICKET(
+	session_id INTEGER NOT NULL,
+	place_id INTEGER NOT NULL,
+	total_coast INTEGER NOT NULL);
 
-CREATE sequence "PLACE_ID_SEQ";
-
-CREATE trigger "BI_PLACE_ID"
-  before insert on "place"
-  for each row
-begin
-  select "PLACE_ID_SEQ".nextval into :NEW."id" from dual;
-end;
-
+--- TODO PRIMARY KEY
 /
+--**************************************************************************************************
+    create table "USER"(
+    id INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
+                   username char(255) not null unique,
+                   password varchar2(255) not null,
+                   constraint user_pk primary key(id));
+--**************************************************************************************************
+CREATE TABLE USERS_TICKETSK(
+	"user_id" INT NOT NULL,
+	"ticket_id" INT NOT NULL);
+    
+--**************************************************************************************************
+ALTER TABLE USERS_TICKETSK ADD CONSTRAINT "users_tickets_fk0" FOREIGN KEY (user_id) REFERENCES "USER"(id);
+ALTER TABLE USERS_TICKETSK ADD CONSTRAINT "users_tickets_fk1" FOREIGN KEY (ticket_id) REFERENCES TICKETK(id);
 
-ALTER TABLE "session" ADD CONSTRAINT "session_fk0" FOREIGN KEY ("film_id") REFERENCES "film"("id");
-ALTER TABLE "session" ADD CONSTRAINT "session_fk1" FOREIGN KEY ("cinema_hall_id") REFERENCES "cinema_hall"("id");
+ALTER TABLE "SESSION" ADD CONSTRAINT "session_fk0" FOREIGN KEY (film_id) REFERENCES FILM(id);
+ALTER TABLE "SESSION" ADD CONSTRAINT "session_fk1" FOREIGN KEY (cinema_hall_id) REFERENCES CINEMA_HALL(id);
 
-ALTER TABLE "films_categories" ADD CONSTRAINT "films_categories_fk0" FOREIGN KEY ("film_id") REFERENCES "film"("id");
-ALTER TABLE "films_categories" ADD CONSTRAINT "films_categories_fk1" FOREIGN KEY ("category_id") REFERENCES "category"("id");
+ALTER TABLE FILMS_CATEGORIES ADD CONSTRAINT "films_categories_fk0" FOREIGN KEY (film_id) REFERENCES FILM(id);
+ALTER TABLE FILMS_CATEGORIES ADD CONSTRAINT "films_categories_fk1" FOREIGN KEY (category_id) REFERENCES CATEGORY(id);
 
-ALTER TABLE "place" ADD CONSTRAINT "place_fk0" FOREIGN KEY ("cinema_hall_id") REFERENCES "cinema_hall"("id");
+ALTER TABLE PLACE ADD CONSTRAINT "place_fk0" FOREIGN KEY (cinema_hall_id) REFERENCES CINEMA_HALL(id);
 
+ALTER TABLE TICKET ADD CONSTRAINT "ticket_fk0" FOREIGN KEY (session_id) REFERENCES "SESSION"(id);
+ALTER TABLE TICKET ADD CONSTRAINT "ticket_fk1" FOREIGN KEY (place_id) REFERENCES PLACE(id);

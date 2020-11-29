@@ -1,0 +1,18 @@
+user: system 		password:Qwertyu2000
+user: super_admin 	password:Qwerty2000
+
+tablaspace: cinema_pdb
+
+
+connect system/Qwertyu2000@//localhost:1521/cinema_pdb as sysdba;
+
+*/
+pdbs config
+*/
+
+select name, open_mode from v$pdbs;
+
+grant all privileges to super_admin;
+
+
+case mount -> ALTER PLUGGABLE DATABASE cinema_pdb open;
