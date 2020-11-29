@@ -4,3 +4,13 @@
 primary key к таблицам многие ко многим
 
 encrypt
+
+drop cascade
+
+char vs varchar or something else
+
+primary key in many to many
+
+error messages where needed
+
+нуужно ли копасити в синема холл
