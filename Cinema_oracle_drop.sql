@@ -5,8 +5,4 @@ drop table "SUPER_ADMIN"."PLACE" cascade constraints PURGE;
 drop table "SUPER_ADMIN"."CATEGORY" cascade constraints PURGE;
 drop table "SUPER_ADMIN"."FILM" cascade constraints PURGE;
 drop table "SUPER_ADMIN"."CINEMA_HALL" cascade constraints PURGE;
-drop table "SUPER_ADMIN"."USERS_TICKETS" cascade constraints PURGE;
 drop table "SUPER_ADMIN"."USER" cascade constraints PURGE;
-
-
-

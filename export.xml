@@ -1,0 +1,12 @@
+
+Error starting at line : 30 in command -
+ begin
+ Export ;
+ end;
+ spool off
+Error report -
+ORA-06550: ?????? 4, ??????? 2:
+PLS-00103: Encountered the symbol "SPOOL" 
+06550. 00000 -  "line %s, column %s:\n%s"
+*Cause:    Usually a PL/SQL compilation error.
+*Action:

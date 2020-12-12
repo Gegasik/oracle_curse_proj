@@ -16,3 +16,13 @@ drop procedure UpdateFilm;
 drop procedure addCategoryToFilm;
 drop procedure deleteCategoryFromFilm;
 ******************************************************************************************************
+drop procedure CreatePlace;
+drop procedure DeletePlaceById;
+drop procedure UpdatePlace;
+******************************************************************************************************
+drop procedure CreateSession;
+drop procedure DeleteSessionById;
+drop procedure UpdateSession;
+******************************************************************************************************
+drop procedure BUYTICKET
+drop procedure DELETETICKET

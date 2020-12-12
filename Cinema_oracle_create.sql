@@ -44,9 +44,12 @@ CREATE TABLE PLACE(
 /
 --**************************************************************************************************
 CREATE TABLE TICKET(
+	id INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
 	session_id INTEGER NOT NULL,
 	place_id INTEGER NOT NULL,
-	total_coast INTEGER NOT NULL);
+	total_coast INTEGER NOT NULL,
+	user_id INTEGER NOT NULL,
+	constraint TICKET_PK PRIMARY KEY (id));
 
 --- TODO PRIMARY KEY
 /
@@ -57,13 +60,6 @@ CREATE TABLE TICKET(
                    password varchar2(255) not null,
                    constraint user_pk primary key(id));
 --**************************************************************************************************
-CREATE TABLE USERS_TICKETSK(
-	"user_id" INT NOT NULL,
-	"ticket_id" INT NOT NULL);
-    
---**************************************************************************************************
-ALTER TABLE USERS_TICKETSK ADD CONSTRAINT "users_tickets_fk0" FOREIGN KEY (user_id) REFERENCES "USER"(id);
-ALTER TABLE USERS_TICKETSK ADD CONSTRAINT "users_tickets_fk1" FOREIGN KEY (ticket_id) REFERENCES TICKETK(id);
 
 ALTER TABLE "SESSION" ADD CONSTRAINT "session_fk0" FOREIGN KEY (film_id) REFERENCES FILM(id);
 ALTER TABLE "SESSION" ADD CONSTRAINT "session_fk1" FOREIGN KEY (cinema_hall_id) REFERENCES CINEMA_HALL(id);
@@ -75,3 +71,4 @@ ALTER TABLE PLACE ADD CONSTRAINT "place_fk0" FOREIGN KEY (cinema_hall_id) REFERE
 
 ALTER TABLE TICKET ADD CONSTRAINT "ticket_fk0" FOREIGN KEY (session_id) REFERENCES "SESSION"(id);
 ALTER TABLE TICKET ADD CONSTRAINT "ticket_fk1" FOREIGN KEY (place_id) REFERENCES PLACE(id);
+ALTER TABLE TICKET ADD CONSTRAINT "ticket_fk2" FOREIGN KEY (user_id) REFERENCES "USER"(id);
