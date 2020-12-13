@@ -3,7 +3,6 @@ user: super_admin 	password:Qwerty2000
 
 tablaspace: cinema_pdb
 
-
 connect system/Qwertyu2000@//localhost:1521/cinema_pdb as sysdba;
 
 */

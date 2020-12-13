@@ -1,0 +1,601 @@
+[{
+  "_id": {
+    "$oid": "5fd698e22487490560551ed4"
+  },
+  "title": "cinema_hall_1",
+  "capacity": 260
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ed5"
+  },
+  "title": "cinema_hall_2",
+  "capacity": 620
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ed6"
+  },
+  "title": "cinema_hall_3",
+  "capacity": 280
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ed7"
+  },
+  "title": "cinema_hall_4",
+  "capacity": 470
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ed8"
+  },
+  "title": "cinema_hall_5",
+  "capacity": 950
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ed9"
+  },
+  "title": "cinema_hall_6",
+  "capacity": 270
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551eda"
+  },
+  "title": "cinema_hall_7",
+  "capacity": 920
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551edb"
+  },
+  "title": "cinema_hall_8",
+  "capacity": 420
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551edc"
+  },
+  "title": "cinema_hall_9",
+  "capacity": 670
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551edd"
+  },
+  "title": "cinema_hall_10",
+  "capacity": 830
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ede"
+  },
+  "title": "cinema_hall_11",
+  "capacity": 490
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551edf"
+  },
+  "title": "cinema_hall_12",
+  "capacity": 120
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee0"
+  },
+  "title": "cinema_hall_13",
+  "capacity": 590
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee1"
+  },
+  "title": "cinema_hall_14",
+  "capacity": 250
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee2"
+  },
+  "title": "cinema_hall_15",
+  "capacity": 490
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee3"
+  },
+  "title": "cinema_hall_16",
+  "capacity": 840
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee4"
+  },
+  "title": "cinema_hall_17",
+  "capacity": 460
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee5"
+  },
+  "title": "cinema_hall_18",
+  "capacity": 810
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee6"
+  },
+  "title": "cinema_hall_19",
+  "capacity": 220
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee7"
+  },
+  "title": "cinema_hall_20",
+  "capacity": 300
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee8"
+  },
+  "title": "cinema_hall_21",
+  "capacity": 570
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ee9"
+  },
+  "title": "cinema_hall_22",
+  "capacity": 930
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551eea"
+  },
+  "title": "cinema_hall_23",
+  "capacity": 490
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551eeb"
+  },
+  "title": "cinema_hall_24",
+  "capacity": 960
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551eec"
+  },
+  "title": "cinema_hall_25",
+  "capacity": 100
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551eed"
+  },
+  "title": "cinema_hall_26",
+  "capacity": 60
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551eee"
+  },
+  "title": "cinema_hall_27",
+  "capacity": 530
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551eef"
+  },
+  "title": "cinema_hall_28",
+  "capacity": 110
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef0"
+  },
+  "title": "cinema_hall_29",
+  "capacity": 210
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef1"
+  },
+  "title": "cinema_hall_30",
+  "capacity": 210
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef2"
+  },
+  "title": "cinema_hall_31",
+  "capacity": 10
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef3"
+  },
+  "title": "cinema_hall_32",
+  "capacity": 560
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef4"
+  },
+  "title": "cinema_hall_33",
+  "capacity": 960
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef5"
+  },
+  "title": "cinema_hall_34",
+  "capacity": 950
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef6"
+  },
+  "title": "cinema_hall_35",
+  "capacity": 700
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef7"
+  },
+  "title": "cinema_hall_36",
+  "capacity": 770
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef8"
+  },
+  "title": "cinema_hall_37",
+  "capacity": 600
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551ef9"
+  },
+  "title": "cinema_hall_38",
+  "capacity": 40
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551efa"
+  },
+  "title": "cinema_hall_39",
+  "capacity": 450
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551efb"
+  },
+  "title": "cinema_hall_40",
+  "capacity": 760
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551efc"
+  },
+  "title": "cinema_hall_41",
+  "capacity": 160
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551efd"
+  },
+  "title": "cinema_hall_42",
+  "capacity": 960
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551efe"
+  },
+  "title": "cinema_hall_43",
+  "capacity": 290
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551eff"
+  },
+  "title": "cinema_hall_44",
+  "capacity": 200
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f00"
+  },
+  "title": "cinema_hall_45",
+  "capacity": 210
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f01"
+  },
+  "title": "cinema_hall_46",
+  "capacity": 1000
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f02"
+  },
+  "title": "cinema_hall_47",
+  "capacity": 960
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f03"
+  },
+  "title": "cinema_hall_48",
+  "capacity": 450
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f04"
+  },
+  "title": "cinema_hall_49",
+  "capacity": 150
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f05"
+  },
+  "title": "cinema_hall_50",
+  "capacity": 740
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f06"
+  },
+  "title": "cinema_hall_51",
+  "capacity": 130
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f07"
+  },
+  "title": "cinema_hall_52",
+  "capacity": 480
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f08"
+  },
+  "title": "cinema_hall_53",
+  "capacity": 600
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f09"
+  },
+  "title": "cinema_hall_54",
+  "capacity": 960
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f0a"
+  },
+  "title": "cinema_hall_55",
+  "capacity": 90
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f0b"
+  },
+  "title": "cinema_hall_56",
+  "capacity": 930
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f0c"
+  },
+  "title": "cinema_hall_57",
+  "capacity": 550
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f0d"
+  },
+  "title": "cinema_hall_58",
+  "capacity": 480
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f0e"
+  },
+  "title": "cinema_hall_59",
+  "capacity": 710
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f0f"
+  },
+  "title": "cinema_hall_60",
+  "capacity": 750
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f10"
+  },
+  "title": "cinema_hall_61",
+  "capacity": 520
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f11"
+  },
+  "title": "cinema_hall_62",
+  "capacity": 300
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f12"
+  },
+  "title": "cinema_hall_63",
+  "capacity": 990
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f13"
+  },
+  "title": "cinema_hall_64",
+  "capacity": 190
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f14"
+  },
+  "title": "cinema_hall_65",
+  "capacity": 740
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f15"
+  },
+  "title": "cinema_hall_66",
+  "capacity": 130
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f16"
+  },
+  "title": "cinema_hall_67",
+  "capacity": 380
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f17"
+  },
+  "title": "cinema_hall_68",
+  "capacity": 50
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f18"
+  },
+  "title": "cinema_hall_69",
+  "capacity": 140
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f19"
+  },
+  "title": "cinema_hall_70",
+  "capacity": 200
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f1a"
+  },
+  "title": "cinema_hall_71",
+  "capacity": 800
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f1b"
+  },
+  "title": "cinema_hall_72",
+  "capacity": 460
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f1c"
+  },
+  "title": "cinema_hall_73",
+  "capacity": 740
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f1d"
+  },
+  "title": "cinema_hall_74",
+  "capacity": 880
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f1e"
+  },
+  "title": "cinema_hall_75",
+  "capacity": 990
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f1f"
+  },
+  "title": "cinema_hall_76",
+  "capacity": 640
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f20"
+  },
+  "title": "cinema_hall_77",
+  "capacity": 650
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f21"
+  },
+  "title": "cinema_hall_78",
+  "capacity": 510
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f22"
+  },
+  "title": "cinema_hall_79",
+  "capacity": 630
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f23"
+  },
+  "title": "cinema_hall_80",
+  "capacity": 400
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f24"
+  },
+  "title": "cinema_hall_81",
+  "capacity": 770
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f25"
+  },
+  "title": "cinema_hall_82",
+  "capacity": 510
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f26"
+  },
+  "title": "cinema_hall_83",
+  "capacity": 370
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f27"
+  },
+  "title": "cinema_hall_84",
+  "capacity": 250
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f28"
+  },
+  "title": "cinema_hall_85",
+  "capacity": 950
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f29"
+  },
+  "title": "cinema_hall_86",
+  "capacity": 660
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f2a"
+  },
+  "title": "cinema_hall_87",
+  "capacity": 680
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f2b"
+  },
+  "title": "cinema_hall_88",
+  "capacity": 490
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f2c"
+  },
+  "title": "cinema_hall_89",
+  "capacity": 140
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f2d"
+  },
+  "title": "cinema_hall_90",
+  "capacity": 30
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f2e"
+  },
+  "title": "cinema_hall_91",
+  "capacity": 220
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f2f"
+  },
+  "title": "cinema_hall_92",
+  "capacity": 680
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f30"
+  },
+  "title": "cinema_hall_93",
+  "capacity": 840
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f31"
+  },
+  "title": "cinema_hall_94",
+  "capacity": 130
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f32"
+  },
+  "title": "cinema_hall_95",
+  "capacity": 20
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f33"
+  },
+  "title": "cinema_hall_96",
+  "capacity": 110
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f34"
+  },
+  "title": "cinema_hall_97",
+  "capacity": 870
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f35"
+  },
+  "title": "cinema_hall_98",
+  "capacity": 110
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f36"
+  },
+  "title": "cinema_hall_99",
+  "capacity": 860
+},{
+  "_id": {
+    "$oid": "5fd698e22487490560551f37"
+  },
+  "title": "cinema_hall_100",
+  "capacity": 500
+}]

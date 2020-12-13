@@ -1,0 +1,116 @@
+[{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ebd"
+  },
+  "title": "Action"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ebe"
+  },
+  "title": "Adventure"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ebf"
+  },
+  "title": "Animation"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec0"
+  },
+  "title": "Biography"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec1"
+  },
+  "title": "Comedy"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec2"
+  },
+  "title": "Crime"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec3"
+  },
+  "title": "Drama"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec4"
+  },
+  "title": "Family"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec5"
+  },
+  "title": "Fantasy"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec6"
+  },
+  "title": "Film Noir"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec7"
+  },
+  "title": "History"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec8"
+  },
+  "title": "Horror"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ec9"
+  },
+  "title": "Music"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551eca"
+  },
+  "title": "Musical"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ecb"
+  },
+  "title": "Mystery"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ecc"
+  },
+  "title": "Romance"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ecd"
+  },
+  "title": "Sci-Fi"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ece"
+  },
+  "title": "Short Film"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ecf"
+  },
+  "title": "Sport"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ed0"
+  },
+  "title": "Superhero"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ed1"
+  },
+  "title": "Thriller"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ed2"
+  },
+  "title": "War"
+},{
+  "_id": {
+    "$oid": "5fd6982b2487490560551ed3"
+  },
+  "title": "Western"
+}]

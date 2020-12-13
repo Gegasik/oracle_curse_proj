@@ -40,17 +40,17 @@ COMMIT;
 --работа с таблицей
 select clob_data into xml from tab1;
 open cur for select *
-FROM XMLTABLE('/root/row'
+FROM XMLTABLE('/films/film'
 PASSING
-xmltype( to_char(xml))
+xmltype(to_char(xml))
 COLUMNS
-id Integer PATH './id',
-name char(255) PATH './original_title',
-description char(255) PATH './overview');
+шв varchar2(255) PATH './шв',
+name varchar2(255) PATH './name',
+description varchar2(1000) PATH './description');
 fetch cur into sup_row;
 while cur%found loop
 --dbms_output.put_line(sup_row.supervisor||' '||sup_row.email);
-addfilm(sup_row.name, sup_row.description);
+CreateFilm(sup_row.name, sup_row.description);
 fetch cur into sup_row;
 end loop;
 close cur;
@@ -58,6 +58,13 @@ close cur;
 EXECUTE IMMEDIATE 'TRUNCATE TABLE tab1';
 commit;
 end ImportFilms;
+
+
+TRUNCATE TABLE tab1;
+
+begin
+ImportFilms('import.txt');
+end;
 
 create or replace procedure CreateFilm(name in CHAR,description in CHAR)
 is
