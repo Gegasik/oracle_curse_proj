@@ -15,8 +15,8 @@ CREATE TABLE CATEGORY (
 /
 CREATE TABLE FILM (
 	id INTEGER GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1),
-	name NVARCHAR2(255) NOT NULL,
-	description NVARCHAR2(1000) NOT NULL,
+	name NVARCHAR2(255) NULL,
+	description NVARCHAR2(1500)  NULL,
 	constraint FILM_PK PRIMARY KEY (id));
 
 --**************************************************************************************************

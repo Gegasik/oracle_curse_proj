@@ -12,7 +12,7 @@ cuser xmltype;
  u Cinema_Hall%rowtype;
 
  begin
- l_file:=UTL_FIlE.fopen ('EXPORT_DIR', l_file_name, 'w', 32767 );
+ l_file:=UTL_FIlE.fopen ('IMPORT_DIR', l_file_name, 'w', 32767 );
  UTL_FILE.put_line(l_file, '<?xml version = "1.0"?>');
  UTL_FILE.put_line(l_file, '<cinemaHalls>');
  open c1;

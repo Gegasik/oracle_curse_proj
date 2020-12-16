@@ -81,3 +81,24 @@ update Users u set u.login = inLogin where u.Password = dPassword;
 commit;
 end;
 
+
+
+
+--------------------------------------------------------------------------------------
+select p.id,c.title,s.date from place p
+inner join cinema_hall c on p.cinema_hall_id=c.id
+inner join "SESSION" s on s.cinema_hall_id=p.cinema_hall_id
+
+select * from place p 
+left join ticket t on t.place_id=p.id where p.cinema_hall_id=12 and user_id is null
+
+select count(p.id) from  "SESSION" s
+inner join place p on p.cinema_hall_id=12
+left join ticket t on t.place_id=p.id
+where t.id is null
+ where s.id=1
+
+CREATE VIEW sessions AS
+SELECT f.name,c.title,s."date" from "SESSION" s
+inner join film f on f.id=s.film_id
+inner join cinema_hall c on c.id=s.cinema_hall_id;

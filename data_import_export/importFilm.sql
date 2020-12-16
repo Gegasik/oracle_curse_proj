@@ -58,3 +58,27 @@ close cur;
 EXECUTE IMMEDIATE 'TRUNCATE TABLE tab1';
 commit;
 end ImportFilms;
+
+
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+CREATE OR REPLACE PROCEDURE chatmessages_import
+IS
+BEGIN
+    INSERT INTO FILM (name, description)
+    SELECT  ExtractValue(VALUE(product_order_xml), '//name')       AS name,
+            ExtractValue(VALUE(product_order_xml), '//description')         AS description
+    FROM TABLE(XMLSequence(EXTRACT(XMLTYPE(bfilename('EXPORT_DIR', 'movie.xml'),
+
+        nls_charset_id('UTF-8')),'films/film'))) product_order_xml;
+END chatmessages_import;
+
+begin
+    chatmessages_import();
+end;
+
+commit;
