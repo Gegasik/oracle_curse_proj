@@ -11,4 +11,12 @@ grant select on cinema_hall to cinema_user;
 grant select on "SESSION" to cinema_user;
 grant select on place to cinema_user;
 
+grant execute on RegistrationUser to cinema_user;
+grant execute on CheckUser to cinema_user;;
+grant execute on AuthorizationUser to cinema_user;
+grant execute on DeleteUser to cinema_user;
+
+grant execute on DeleteUser to BuyTicket;
+
+
 drop user cinema_user

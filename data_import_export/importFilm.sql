@@ -66,19 +66,18 @@ end ImportFilms;
 
 
 
-CREATE OR REPLACE PROCEDURE chatmessages_import
+CREATE OR REPLACE DIRECTORY  IMPORT_DIR  AS 'E:\app\user1\test';
+CREATE OR REPLACE PROCEDURE IMPORT_FILMS
 IS
 BEGIN
     INSERT INTO FILM (name, description)
     SELECT  ExtractValue(VALUE(product_order_xml), '//name')       AS name,
             ExtractValue(VALUE(product_order_xml), '//description')         AS description
-    FROM TABLE(XMLSequence(EXTRACT(XMLTYPE(bfilename('EXPORT_DIR', 'movie.xml'),
+    FROM TABLE(XMLSequence(EXTRACT(XMLTYPE(bfilename('IMPORT_DIR', 'movie.xml'),
 
         nls_charset_id('UTF-8')),'films/film'))) product_order_xml;
-END chatmessages_import;
+END IMPORT_FILMS;
 
 begin
-    chatmessages_import();
+    IMPORT_FILMS();
 end;
-
-commit;
