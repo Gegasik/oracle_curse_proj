@@ -1,8 +1,9 @@
 --Check if user exists
+
 create or replace procedure CheckUser (inLogin in varchar2, inPassword in varchar2)
 is
  cuser number;
- cursor c1 is select u.id from Users u where u.login = inLogin and u.password = inPassword;
+ cursor c1 is select u.id from "USER" u where u.username = inLogin and u.password = inPassword;
  begin 
  open c1;
  fetch c1 into cuser;
@@ -12,12 +13,13 @@ is
  end if;
  close c1;
  end;
+
  
  --Registration
  create or replace procedure RegistrationUser (inLogin in nvarchar2, inPassword in varchar2)
  is
  cuser number;
- cursor c1 is select u.id from Users u where u.Login = inLogin and u.password = inPassword;
+ cursor c1 is select u.id from "USER" u where u.username = inLogin and u.password = inPassword;
    newPassword varchar2(2000);
 begin
   newPassword := inPassword;
@@ -98,7 +100,4 @@ left join ticket t on t.place_id=p.id
 where t.id is null
  where s.id=1
 
-CREATE VIEW sessions AS
-SELECT f.name,c.title,s."date" from "SESSION" s
-inner join film f on f.id=s.film_id
-inner join cinema_hall c on c.id=s.cinema_hall_id;
+

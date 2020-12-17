@@ -19,4 +19,6 @@ grant execute on DeleteUser to cinema_user;
 grant execute on BuyTicket to cinema_user;
 
 
+GRANT SELECT ON sessions TO cinema_user;
+
 drop user cinema_user

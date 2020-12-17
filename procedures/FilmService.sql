@@ -21,9 +21,9 @@ begin
   commit;
 end;
 --****************************************************************************************************
-create or replace procedure UpdateFilm (name in NVARCHAR2,description in NVARCHAR2, id number)
+create or replace procedure UpdateFilm ("name" in NVARCHAR2,"description" in NVARCHAR2, "id" in number)
 is 
 begin
-  update FILM f set f.name = name,f.description=description where f.id=id ;
+  update FILM f set f.name = "name",f.description="description" where f.id="id" ;
   commit;
 end;

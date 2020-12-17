@@ -1,4 +1,4 @@
-create or replace procedure CreateSession(filmId integer, cinemaHallId integer,addedCoast integer,"date" date)
+create or replace procedure CreateSession(filmId in integer, cinemaHallId integer,addedCoast integer,"date" date)
 is
 begin
 insert into "SESSION" s(s.film_id,s.cinema_hall_id,s.added_coast,s."date") 
