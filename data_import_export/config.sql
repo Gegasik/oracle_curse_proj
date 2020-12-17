@@ -8,3 +8,5 @@ CREATE OR REPLACE DIRECTORY  IMPORT_DIR  AS 'E:\app\user1\test';
 --TRUNCATE TABLE tab1
 
 
+ADD DATAFILE 'D:\Tablespaces\ciinema.dbf' SIZE 200M
+AUTOEXTEND ON

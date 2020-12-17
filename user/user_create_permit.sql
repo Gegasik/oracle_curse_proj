@@ -16,7 +16,7 @@ grant execute on CheckUser to cinema_user;;
 grant execute on AuthorizationUser to cinema_user;
 grant execute on DeleteUser to cinema_user;
 
-grant execute on DeleteUser to BuyTicket;
+grant execute on BuyTicket to cinema_user;
 
 
 drop user cinema_user

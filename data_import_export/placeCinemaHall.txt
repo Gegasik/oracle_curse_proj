@@ -1,0 +1,32 @@
+CREATE OR REPLACE DIRECTORY  IMPORT_DIR  AS 'D:\app\user1\test';
+create or replace procedure ExportCinemaHallAndPlace
+is
+l_file UTL_FILE.file_type;
+l_file_name varchar2 (60) := 'PlaceExport.xml';
+cursor c1 is select c.title,p.coast from place p
+inner join cinema_hall c on c.id=p.cinema_hall_id
+cuser xmltype;
+ u_string varchar2(1500);
+ u c1%rowtype;
+
+ begin
+ l_file:=UTL_FIlE.fopen ('IMPORT_DIR', l_file_name, 'w', 32767 );
+ UTL_FILE.put_line(l_file, '<?xml version = "1.0"?>');
+ UTL_FILE.put_line(l_file, '<places>');
+ open c1;
+ fetch c1 into u;
+ while c1%found loop
+ select XMLElement("place", XMLElement("cinema_hall_title", u.title), XMLELEMENT("coast", u.coast)) into cuser from dual;
+ u_string :=cuser.getStringVal();
+ UTL_FILE.put_line(l_file, u_string);
+
+ fetch c1 into u;
+ end loop;
+ close c1;
+ UTL_FILE.put_line(l_file, '</places>');
+ UTL_FILE.fclose(l_file);
+ end ExportCinemaHallAndPlace;
+ -----------------------------------------------------------------
+  begin
+ ExportFilms;;
+ end;
